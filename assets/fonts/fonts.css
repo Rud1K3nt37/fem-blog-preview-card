@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'Figtree';
+    src: url('./static/Figtree-Medium.woff2') format('woff2'),
+        url('./static/Figtree-Medium.woff') format('woff'),
+        url('./static/Figtree-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Figtree';
+    src: url('./static/Figtree-ExtraBold.woff2') format('woff2'),
+        url('./static/Figtree-ExtraBold.woff') format('woff'),
+        url('./static/Figtree-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Figtree';
+    src: url('Figtree-VariableFont_wght.woff2') format('woff2'),
+        url('Figtree-VariableFont_wght.woff') format('woff'),
+        url('Figtree-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Figtree';
+    src: url('Figtree-Italic-VariableFont_wght.woff2') format('woff2'),
+        url('Figtree-Italic-VariableFont_wght.woff') format('woff'),
+        url('Figtree-Italic-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: italic;
+    font-display: swap;
+}

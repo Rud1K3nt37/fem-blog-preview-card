@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'Figtree';
+    src: url('Figtree-Light.woff2') format('woff2'),
+        url('Figtree-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Figtree';
+    src: url('Figtree-LightItalic.woff2') format('woff2'),
+        url('Figtree-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+

@@ -1,0 +1,33 @@
+:root {
+  --color-bg: #F4D04E;
+  --color-text: #111;
+  --color-card: #fff;
+  --color-title: #111;
+  --color-subtitle: #6B6B6B;
+
+  --radius: 20px;
+  --radius-s: 10px;
+  --radius-xs: 4px;
+  --radius-round: 50%;
+  --gap-24: 1.5rem;
+  --gap-12: 0.75rem;
+  --padding: 1.5rem;
+  --padding-s: 0.25rem 0.75rem;
+
+  --ff: 'Figtree', sans-serif;
+
+  --fs-24: 1.5rem;
+  --fs-16: 1rem;
+  --fs-14: 0.875rem;
+
+  --fw-500: 500;
+  --fw-800: 800;
+
+  --lh-150: 1.5;
+
+  --shadow-card: 8px 8px 0 0 rgba(0, 0, 0, 1);
+
+  /* Цвета ссылок */
+  --link-color: hsl(228, 45%, 44%);
+  --link-hover-color: hsl(228, 70%, 60%);
+}
