@@ -130,3 +130,9 @@ main {
 .attribution a:hover {
   color: var(--link-hover-color);
 }
+
+@media (prefers-reduced-motion: reduce) {
+  .card__link {
+    transition: none;
+  }
+}
