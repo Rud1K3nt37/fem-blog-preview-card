@@ -6,9 +6,9 @@
   padding: 0;
 }
 
-h1 {
-  margin: 0;
-  padding: 0;
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
 address {
@@ -21,6 +21,7 @@ html {
 
 body {
   font-family: var(--ff);
+  font-weight: var(--fw-500);
   line-height: var(--lh-150);
   background-color: var(--color-bg);
   color: var(--color-text);
@@ -37,15 +38,16 @@ main {
   display: flex;
   flex-direction: column;
   inline-size: 100%;
-  max-inline-size: min(90vw, 384px);
+  max-inline-size: clamp(327px, 27vw ,384px);
   background-color: var(--color-card);
-  box-shadow: var(--shadow-card);
+  border: 1px solid var(--color-black);
   border-radius: var(--radius);
+  box-shadow: var(--shadow-card);
   gap: var(--gap-24);
   padding: var(--padding);
 }
 
-.card__container,
+.card__content,
 .card__meta,
 .card__description {
   display: flex;
@@ -58,7 +60,6 @@ main {
 .card__image {
   display: block;
   inline-size: 100%;
-  block-size: auto;
   border-radius: var(--radius-s);
   object-fit: cover;
   object-position: center;
@@ -67,25 +68,42 @@ main {
 .card__tag {
   background-color: var(--color-bg);
   border-radius: var(--radius-xs);
-  font-size: var(--fs-14);
+  /* font-size: var(--fs-14); */
+  font-size: clamp(var(--fs-12), 2vw, var(--fs-14));
   font-weight: var(--fw-800);
   padding: var(--padding-s);
 }
 
 .card__date {
-  font-size: var(--fs-14);
-  font-weight: var(--fw-500);
+  font-size: clamp(var(--fs-12), 2vw, var(--fs-14));
 }
 
-.card__title {
-  font-size: var(--fs-24);
+.card__link {
+  display: inline-block;
+  font-size: clamp(var(--fs-20), 2vw, var(--fs-24));
   font-weight: var(--fw-800);
+  cursor: url("../assets/images/pointer.png") 7 2, pointer;
+  box-shadow: var(--shadow-cursor);
+  transition: color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card__link:hover,
+.card__link:focus {
+  color: var(--color-link);
+}
+
+.card__link:active {
+  color: var(--color-link);
+}
+
+.card__link:focus-visible {
+  outline: 2px solid var(--color-link);
+  outline-offset: 2px;
 }
 
 .card__text {
   color: var(--color-subtitle);
-  font-size: var(--fs-16);
-  font-weight: var(--fw-500);
+  font-size: clamp(var(--fs-14), 2vw, var(--fs-16));
 }
 
 .card__author {

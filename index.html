@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-    <link rel="stylesheet" href="./assets/fonts/fonts.css">
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/variables.css">
     <link rel="stylesheet" href="./styles/styles.css">
     <title>Blog preview card</title>
@@ -12,8 +12,8 @@
   <body>
     <main>
       <article class="card">
-        <img class="card__image" src="./assets/images/illustration-article.svg" width="336" height="200" alt="Illustration representing the article">
-        <div class="card__container">
+        <img class="card__image" src="./assets/images/illustration-article.svg" width="336" height="200" loading="lazy" alt="Illustration representing the article">
+        <div class="card__content">
           <div class="card__meta">
             <span class="card__tag">Learning</span>
             <p class="card__date">Published
@@ -21,8 +21,10 @@
             </p>
           </div>
           <div class="card__description">
-            <h1 class="card__title">HTML & CSS foundations</h1>
-            <p class="card__text">These languages are the backbone of every website, defining structure, content, and presentation.</p>
+            <h1 class="card__title">
+              <a class="card__link" href="#" aria-label="Read more about HTML and CSS foundations">HTML & CSS foundations</a>
+            </h1>
+            <p class="card__text">These la nguages are the backbone of every website, defining structure, content, and presentation.</p>
           </div>
         </div>
         <address class="card__author">

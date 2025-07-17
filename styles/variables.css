@@ -1,9 +1,13 @@
 :root {
+  --color-black: #000;
+  --color-white: #fff;
+
   --color-bg: #F4D04E;
   --color-text: #111;
   --color-card: #fff;
   --color-title: #111;
   --color-subtitle: #6B6B6B;
+  --color-link: #F4D04E;
 
   --radius: 20px;
   --radius-s: 10px;
@@ -17,8 +21,10 @@
   --ff: 'Figtree', sans-serif;
 
   --fs-24: 1.5rem;
+  --fs-20: 1.25rem;
   --fs-16: 1rem;
   --fs-14: 0.875rem;
+  --fs-12: 0.75rem;
 
   --fw-500: 500;
   --fw-800: 800;
@@ -26,6 +32,7 @@
   --lh-150: 1.5;
 
   --shadow-card: 8px 8px 0 0 rgba(0, 0, 0, 1);
+  --shadow-cursor: 0 1px 2 0 rgba(0, 0, 0, 1);
 
   /* Цвета ссылок */
   --link-color: hsl(228, 45%, 44%);
